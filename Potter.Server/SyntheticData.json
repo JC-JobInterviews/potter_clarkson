@@ -1,0 +1,90 @@
+[
+  {
+    "id": "IRN-2024-001",
+    "title": "Method for Secure Data Encryption",
+    "client": "Tech Solutions Inc.",
+    "type": "Patent",
+    "description": "A novel method for encrypting data using a dynamic key generation algorithm.",
+    "dateCreated": "2025-11-16T00:00:00.000Z"
+  },
+  {
+    "id": "IRN-2024-002",
+    "title": "ACME Innovate Logo",
+    "client": "ACME LLP",
+    "type": "Trade Mark",
+    "description": "Registration for the new company logo and branding assets.",
+    "dateCreated": "2025-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "IRN-2024-003",
+    "title": "Smart Home Energy Optimisation System",
+    "client": "GreenGrid Energy",
+    "type": "Patent",
+    "description": "An automated system that optimises household energy usage using machine learning.",
+    "dateCreated": "2025-09-12T00:00:00.000Z"
+  },
+  {
+    "id": "IRN-2024-004",
+    "title": "Brand Identity for NovaWear",
+    "client": "NovaWear Ltd.",
+    "type": "Trade Mark",
+    "description": "Trademark application covering logo, brand name, and product packaging design.",
+    "dateCreated": "2025-08-28T00:00:00.000Z"
+  },
+  {
+    "id": "IRN-2024-005",
+    "title": "CloudSync Enterprise Software",
+    "client": "BlueCloud Technologies",
+    "type": "Copyright",
+    "description": "Original source code and technical documentation for CloudSync enterprise suite.",
+    "dateCreated": "2025-07-18T00:00:00.000Z"
+  },
+  {
+    "id": "IRN-2024-006",
+    "title": "Orion Headphones Industrial Design",
+    "client": "SoundWave Audio",
+    "type": "Design",
+    "description": "Registered design covering the unique aesthetic and ergonomic features of Orion headphones.",
+    "dateCreated": "2025-11-02T00:00:00.000Z"
+  },
+  {
+    "id": "IRN-2024-007",
+    "title": "AI Model for Predictive Maintenance",
+    "client": "MechaTech Industries",
+    "type": "Patent",
+    "description": "A deep learning model that predicts machine failures using sensor data.",
+    "dateCreated": "2025-10-14T00:00:00.000Z"
+  },
+  {
+    "id": "IRN-2024-008",
+    "title": "FreshBrew Coffee Brand",
+    "client": "FreshBrew Co.",
+    "type": "Trade Mark",
+    "description": "Trademark covering brand name, colour palette, and retail packaging.",
+    "dateCreated": "2025-09-22T00:00:00.000Z"
+  },
+  {
+    "id": "IRN-2024-009",
+    "title": "SkyLink Mobile App UI",
+    "client": "SkyLink Telecom",
+    "type": "Copyright",
+    "description": "Copyright protection for custom user interface layouts and icons.",
+    "dateCreated": "2025-06-05T00:00:00.000Z"
+  },
+  {
+    "id": "IRN-2024-010",
+    "title": "AeroLite Drone Propeller Design",
+    "client": "AeroLite Robotics",
+    "type": "Design",
+    "description": "Registered design for an aerodynamically enhanced drone propeller.",
+    "dateCreated": "2025-10-30T00:00:00.000Z"
+  },
+  {
+    "id": "IRN-2024-011",
+    "title": "Blockchain-Based Voting Protocol",
+    "client": "CivicSecure Ltd.",
+    "type": "Patent",
+    "description": "A secure blockchain protocol for verifying and recording votes.",
+    "dateCreated": "2025-11-12T00:00:00.000Z"
+  }
+]
