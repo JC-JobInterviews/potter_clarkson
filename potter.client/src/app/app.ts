@@ -57,6 +57,11 @@ export class App implements OnInit {
 
   // protected readonly title = signal('potter.client');
 
+  onAdd(): void {
+    console.log('Add button clicked');
+    alert(`Add asset`);
+  }
+  
   onEdit(asset: IntellectualPropertyAsset): void {
     console.log('Edit clicked for:', asset.internalReference);
     alert(`Editing asset: ${asset.title}`);

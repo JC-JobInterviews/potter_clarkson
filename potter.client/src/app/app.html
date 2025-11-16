@@ -33,10 +33,12 @@
     <td mat-cell *matCellDef="let element"> {{element.dateCreated | date:'yyyy-MM-dd'}} </td>
   </ng-container>
   <ng-container matColumnDef="actions">
-    <th mat-header-cell *matHeaderCellDef> Actions </th>
+    <th mat-header-cell *matHeaderCellDef>
+      <button matButton="filled" class="custom-green-button" (click)="onAdd()" aria-label="Add asset">Add</button>
+    </th>
     <td mat-cell *matCellDef="let element">
       <button matButton="filled" (click)="onEdit(element)" aria-label="Edit asset" style="margin-right: 10px;">Edit</button>
-      <button matButton="filled" class="custom-green-button" (click)="onDelete(element)" aria-label="Delete asset">Delete</button>
+      <button matButton="filled" class="custom-red-button" (click)="onDelete(element)" aria-label="Delete asset">Delete</button>
     </td>
   </ng-container>
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

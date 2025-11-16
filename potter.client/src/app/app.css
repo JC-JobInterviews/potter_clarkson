@@ -1,4 +1,9 @@
 ﻿.custom-green-button {
+  background-color: green !important;
+  color: white;
+}
+
+.custom-red-button {
   background-color: firebrick !important;
-  color: white; /* Ensure text is readable */
+  color: white;
 }
