@@ -1,4 +1,4 @@
-﻿<div class="typography-example-container">
+﻿<div class="typography-example-container" style="text-align: center;">
   <h1 class="mat-headline">ACME LLP IP MANAGEMENT PORTAL</h1>
   <h3 class="mat-subheading-1" style="font-weight: 400;">
     A place to manage portfolios of Intellectual Property assets on behalf our clients.
@@ -27,6 +27,13 @@
   <ng-container matColumnDef="dateCreated">
     <th mat-header-cell *matHeaderCellDef> Date Created </th>
     <td mat-cell *matCellDef="let element"> {{element.dateCreated | date:'yyyy-MM-dd'}} </td>
+  </ng-container>
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef> Actions </th>
+    <td mat-cell *matCellDef="let element">
+      <button matButton="filled" (click)="onEdit(element)" aria-label="Edit asset" style="margin-right: 10px;">Edit</button>
+      <button matButton="filled" class="custom-green-button" (click)="onDelete(element)" aria-label="Delete asset">Delete</button>
+    </td>
   </ng-container>
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
