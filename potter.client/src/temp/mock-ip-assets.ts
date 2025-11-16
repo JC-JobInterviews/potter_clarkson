@@ -2,7 +2,7 @@ import { IntellectualPropertyAsset } from '../app/types';
 
 const MOCK_IP_ASSETS: IntellectualPropertyAsset[] = [
   {
-    internalReference: 'IRN-2024-001',
+    id: 'IRN-2024-001',
     title: 'Method for Secure Data Encryption',
     client: 'Tech Solutions Inc.',
     type: 'Patent',
@@ -10,7 +10,7 @@ const MOCK_IP_ASSETS: IntellectualPropertyAsset[] = [
     dateCreated: new Date('2025-11-16'),
   },
   {
-    internalReference: 'IRN-2024-002',
+    id: 'IRN-2024-002',
     title: 'ACME Innovate Logo',
     client: 'ACME LLP',
     type: 'Trade Mark',

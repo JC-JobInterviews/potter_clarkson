@@ -45,7 +45,7 @@ export class App implements OnInit {
   }
 
   // getForecasts() {
-  //   this.http.get<any[]>('/weatherforecast').subscribe(
+  //   this.http.get<any[]>('/intellectualproperties').subscribe(
   //     (result) => {
   //       this.forecasts = result;
   //     },
@@ -63,12 +63,12 @@ export class App implements OnInit {
   }
   
   onEdit(asset: IntellectualPropertyAsset): void {
-    console.log('Edit clicked for:', asset.internalReference);
+    console.log('Edit clicked for:', asset.id);
     alert(`Editing asset: ${asset.title}`);
   }
 
   onDelete(asset: IntellectualPropertyAsset): void {
-    console.log('Delete clicked for:', asset.internalReference);
+    console.log('Delete clicked for:', asset.id);
     alert(`Deleting asset: ${asset.title}`);
   }
 }
