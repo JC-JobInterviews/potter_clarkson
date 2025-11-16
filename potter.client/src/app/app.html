@@ -6,6 +6,10 @@
 </div>
 
 <!-- <p *ngIf="!forecasts"><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p> -->
+<mat-form-field>
+  <mat-label>Filter by Client</mat-label>
+  <input matInput (keyup)="applyClientFilter($event)" placeholder="E.g. Tech Solutions" #input>
+</mat-form-field>
 
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <ng-container matColumnDef="title">
