@@ -1,32 +1,33 @@
 ﻿<div class="typography-example-container">
-  <!-- Main Header -->
   <h1 class="mat-headline">ACME LLP IP MANAGEMENT PORTAL</h1>
-
-  <!-- Sub Header -->
-  <p class="mat-subheading-1">
+  <h3 class="mat-subheading-1" style="font-weight: 400;">
     A place to manage portfolios of Intellectual Property assets on behalf our clients.
-  </p>
+  </h3>
 </div>
 
 <!-- <p *ngIf="!forecasts"><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p> -->
 
-<table>
-    <thead>
-        <tr>
-            <th>Date</th>
-            <th>Temp. (C)</th>
-            <th>Temp. (F)</th>
-            <th>Summary</th>
-        </tr>
-    </thead>
-    <tbody>
-        @for (forecast of forecasts; track forecast.date) {
-        <tr>
-            <td>{{ forecast.date }}</td>
-            <td>{{ forecast.temperatureC }}</td>
-            <td>{{ forecast.temperatureF }}</td>
-            <td>{{ forecast.summary }}</td>
-        </tr>
-    }
-    </tbody>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <ng-container matColumnDef="title">
+    <th mat-header-cell *matHeaderCellDef> Title </th>
+    <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+  </ng-container>
+  <ng-container matColumnDef="client">
+    <th mat-header-cell *matHeaderCellDef> Client </th>
+    <td mat-cell *matCellDef="let element"> {{element.client}} </td>
+  </ng-container>
+  <ng-container matColumnDef="type">
+    <th mat-header-cell *matHeaderCellDef> Type </th>
+    <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+  </ng-container>
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef> Description </th>
+    <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+  </ng-container>
+  <ng-container matColumnDef="dateCreated">
+    <th mat-header-cell *matHeaderCellDef> Date Created </th>
+    <td mat-cell *matCellDef="let element"> {{element.dateCreated | date:'yyyy-MM-dd'}} </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>

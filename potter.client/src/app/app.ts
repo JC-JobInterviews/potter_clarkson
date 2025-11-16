@@ -1,34 +1,47 @@
 import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, signal } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+import { IntellectualPropertyAsset } from './types';
+import MOCK_IP_ASSETS from '../temp/mock-ip-assets';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   standalone: true,
   styleUrl: './app.css',
-  imports: [MatButtonModule, MatIconModule],
+  imports: [MatButtonModule, MatTableModule, CommonModule],
 })
 export class App implements OnInit {
-  public forecasts: any[] = [];
+  // The columns we want to display, in order
+  displayedColumns: (keyof IntellectualPropertyAsset)[] = [
+    'title',
+    'client',
+    'type',
+    'description',
+    'dateCreated'
+  ];
+
+  // Use the imported data source
+  dataSource: IntellectualPropertyAsset[] = MOCK_IP_ASSETS;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.getForecasts();
+    // this.getForecasts();
   }
 
-  getForecasts() {
-    this.http.get<any[]>('/weatherforecast').subscribe(
-      (result) => {
-        this.forecasts = result;
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
-  }
+  // getForecasts() {
+  //   this.http.get<any[]>('/weatherforecast').subscribe(
+  //     (result) => {
+  //       this.forecasts = result;
+  //     },
+  //     (error) => {
+  //       console.error(error);
+  //     }
+  //   );
+  // }
 
-  protected readonly title = signal('potter.client');
+  // protected readonly title = signal('potter.client');
 }

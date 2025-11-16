@@ -1,4 +1,4 @@
-type IntellectualPropertyAsset = {
+export type IntellectualPropertyAsset = {
   internalReference: string; // I would use a type like UUID/GUID for this, normally generated for us by NoSQL DB's.
   title: string;
   client: string;
