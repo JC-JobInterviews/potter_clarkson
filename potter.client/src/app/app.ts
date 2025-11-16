@@ -14,16 +14,15 @@ import MOCK_IP_ASSETS from '../temp/mock-ip-assets';
   imports: [MatButtonModule, MatTableModule, CommonModule],
 })
 export class App implements OnInit {
-  // The columns we want to display, in order
-  displayedColumns: (keyof IntellectualPropertyAsset)[] = [
+  displayedColumns: (keyof IntellectualPropertyAsset | 'actions')[] = [
     'title',
     'client',
     'type',
     'description',
-    'dateCreated'
+    'dateCreated',
+    'actions'
   ];
 
-  // Use the imported data source
   dataSource: IntellectualPropertyAsset[] = MOCK_IP_ASSETS;
 
   constructor(private http: HttpClient) {}
@@ -44,4 +43,14 @@ export class App implements OnInit {
   // }
 
   // protected readonly title = signal('potter.client');
+
+  onEdit(asset: IntellectualPropertyAsset): void {
+    console.log('Edit clicked for:', asset.internalReference);
+    alert(`Editing asset: ${asset.title}`);
+  }
+
+  onDelete(asset: IntellectualPropertyAsset): void {
+    console.log('Delete clicked for:', asset.internalReference);
+    alert(`Deleting asset: ${asset.title}`);
+  }
 }
