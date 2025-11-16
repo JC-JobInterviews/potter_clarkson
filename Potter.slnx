@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="potter.client/potter.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="Potter.Server/Potter.Server.csproj" />
+</Solution>

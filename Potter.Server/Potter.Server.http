@@ -1,0 +1,6 @@
+@Potter.Server_HostAddress = http://localhost:5298
+
+GET {{Potter.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
